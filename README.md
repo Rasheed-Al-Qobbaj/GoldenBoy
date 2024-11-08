@@ -26,8 +26,6 @@ This repository contains a health and fitness app to help users find gym coaches
   - `activity_main.xml` - Layout for the main activity
   - `activity_spinner.xml` - Layout for the spinner activity
   - `activity_gym_detail.xml` - Layout for the gym detail activity
-  - `list_item.xml` - Custom layout for list view items
-  - `spinner_dropdown_item.xml` - Custom layout for spinner dropdown items
 - `app/src/main/AndroidManifest.xml` - Contains the app manifest file
 
 ## Getting Started
@@ -50,4 +48,4 @@ To get a local copy up and running, follow these steps:
 
 ## Acknowledgements
 
-- Thanks to Prof. Yousef Shahdeh and the Mobile Development course (COMP4310) for the guidance and support.
+- Thanks to Prof. Faisal Shehadeh and the Mobile Development course (COMP4310) for the guidance and support.
