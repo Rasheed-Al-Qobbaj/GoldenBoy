@@ -3,6 +3,7 @@ package com.example.goldenboy;
 import androidx.annotation.NonNull;
 
 import java.util.ArrayList;
+import java.util.Dictionary;
 
 public class Gym {
     private String name;
@@ -23,9 +24,15 @@ public class Gym {
         return address;
     }
 
+
+    public ArrayList<Coach> getCoaches() {
+        return coaches;
+    }
+
     @NonNull
     @Override
     public String toString() {
         return name+" - "+address;
     }
+
 }

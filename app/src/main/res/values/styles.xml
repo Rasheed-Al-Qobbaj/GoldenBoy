@@ -17,5 +17,13 @@
     <item name="android:textColor">@color/background_color</item>
     <item name="android:background">@color/button_color</item>
     <item name="android:gravity">center</item>
-</style>
+    </style>
+
+    <style name="GymDetailTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowBackground">@color/background_color</item>
+        <item name="colorPrimary">@color/button_color</item>
+        <item name="colorPrimaryDark">@color/button_color</item>
+        <item name="colorAccent">@color/button_color</item>
+        <item name="android:textColor">@color/button_color</item>
+    </style>
 </resources>

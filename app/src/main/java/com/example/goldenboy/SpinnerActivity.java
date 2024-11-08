@@ -1,5 +1,6 @@
 package com.example.goldenboy;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -55,6 +56,21 @@ public class SpinnerActivity extends AppCompatActivity {
             }
             ArrayAdapter<String> gymAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, gymNames);
             listView.setAdapter(gymAdapter);
+        });
+
+        // When an item in the ListView is clicked, start the GymDetailActivity
+        listView.setOnItemClickListener((parent, view, position, id) -> {
+            Gym gym = cities.get(spinner.getSelectedItemPosition()).getGyms().get(position);
+            Intent intent = new Intent(SpinnerActivity.this, GymDetailActivity.class);
+            intent.putExtra("gymName", gym.getName());
+            intent.putExtra("gymAddress", gym.getAddress());
+            intent.putExtra("coach1Name", gym.getCoaches().get(0).getName());
+            intent.putExtra("coach1Specialty", gym.getCoaches().get(0).getSpeciality());
+            intent.putExtra("coach1Phone", gym.getCoaches().get(0).getPhone());
+            intent.putExtra("coach2Name", gym.getCoaches().get(1).getName());
+            intent.putExtra("coach2Specialty", gym.getCoaches().get(1).getSpeciality());
+            intent.putExtra("coach2Phone", gym.getCoaches().get(1).getPhone());
+            startActivity(intent);
         });
 
     }
